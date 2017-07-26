@@ -44,13 +44,16 @@ player.prototype.render = function() {
 };
 
 player.prototype.handleInput = function(e) {
-    if (e === 'left') {
+    if (e === 'left' && (this.x - 101 > -1)) {
         this.x = this.x - 101;
-    } else if (e === 'right') {
+    } else if (e === 'right' && (this.x + 101 < 405)) {
         this.x = this.x + 101;
-    } else if (e ==='up') {
+    } else if (e ==='up' && (this.y - 83 > 0)) {
         this.y = this.y - 83;
-    } else if (e === 'down') {
+    } else if (e === 'up' && (this.y - 83 <= 0)) {
+        this.x = 202;
+        this.y = 373.5;
+    } else if (e === 'down' && (this.y + 83 < 415)) {
         this.y = this.y + 83;
     }
 }
