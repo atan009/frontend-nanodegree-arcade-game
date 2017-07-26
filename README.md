@@ -15,3 +15,4 @@ Use the arrow keys to control the character.<br>
 Up, Down, Left and Right moves the character in the respective direction.<br>
 If touched by a bug, the character will be sent to the start.<br>
 Upon reaching the river, a victory message will be logged into the console which can be seen by inspecting the open page.
+[Click Here to Play](https://atan009.github.io/frontend-nanodegree-arcade-game/)
