@@ -1,6 +1,17 @@
-frontend-nanodegree-arcade-game
-===============================
+# frontend-nanodegree-arcade-game - Alex Tan
 
-Students should use this [rubric](https://review.udacity.com/#!/projects/2696458597/rubric) for self-checking their submission. Make sure the functions you write are **object-oriented** - either class functions (like Player and Enemy) or class prototype functions such as Enemy.prototype.checkCollisions, and that the keyword 'this' is used appropriately within your class and class prototype functions to refer to the object the function is called upon. Also be sure that the **readme.md** file is updated with your instructions on both how to 1. Run and 2. Play your arcade game.
+This is a project that I did for the frontend nanodegree program from Udacity.
 
-For detailed instructions on how to get started, check out this [guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
+If you would like to do this yourself, check out this [Repo](https://github.com/udacity/frontend-nanodegree-arcade-game).
+
+## 1. How to Run
+Upon downloading these files/repository, open frontend-nanodegree-game folder.<br>
+Inside the folder, open the index.html with any web browser.<br>
+This should automatically start the game.<br>
+
+## 2. How to Play
+The only goal is to get the player to the river.<br>
+Use the arrow keys to control the character.<br>
+Up, Down, Left and Right moves the character in the respective direction.<br>
+If touched by a bug, the character will be sent to the start.<br>
+Upon reaching the river, a victory message will be logged into the console which can be seen by inspecting the open page.
