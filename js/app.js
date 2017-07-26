@@ -20,7 +20,7 @@ Enemy.prototype.update = function(dt) {
     this.x = this.x + (this.speed * dt);
     if (this.x > 600) {
         this.x = -100;
-        var setY = Math.floor(Math.random() * 3);
+        var setY = Math.floor(Math.random() * 3);//randomize bug columns
         if (setY === 0) {
             this.y = 62.25;
         } else if (setY === 1) {
@@ -30,7 +30,7 @@ Enemy.prototype.update = function(dt) {
         }
     }
 
-    
+    //Collision detection +/- 50px
     if (Math.abs(this.x - player.x) <= 50 && this.y === player.y) {
         player.x = 202;
         player.y = 394.25;
@@ -52,7 +52,7 @@ var player = function () {
 };
 
 player.prototype.update = function() {
-    
+    //Didn't end up using
 };
 
 player.prototype.render = function() {
@@ -69,6 +69,7 @@ player.prototype.handleInput = function(e) {
     } else if (e === 'up' && (this.y - 83 <= 0)) {
         this.x = 202;
         this.y = 394.25;
+        console.log("CONGRATULATIONS, YOU WON!");
     } else if (e === 'down' && (this.y + 83 < 415)) {
         this.y = this.y + 83;
     }
