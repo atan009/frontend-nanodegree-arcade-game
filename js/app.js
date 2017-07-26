@@ -45,21 +45,21 @@ Enemy.prototype.render = function() {
 // Now write your own player class
 // This class requires an update(), render() and
 // a handleInput() method.
-var player = function () {
+var Player = function () {
     this.x = 202;
     this.y = 394.25;
     this.sprite = 'images/char-boy.png';
 };
 
-player.prototype.update = function() {
+Player.prototype.update = function() {
     //Didn't end up using
 };
 
-player.prototype.render = function() {
+Player.prototype.render = function() {
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
 };
 
-player.prototype.handleInput = function(e) {
+Player.prototype.handleInput = function(e) {
     if (e === 'left' && (this.x - 101 > -1)) {
         this.x = this.x - 101;
     } else if (e === 'right' && (this.x + 101 < 405)) {
@@ -87,7 +87,7 @@ allEnemies.push(e1);
 allEnemies.push(e2);
 allEnemies.push(e3);
 
-var player = new player();
+var player = new Player();
 
 // This listens for key presses and sends the keys to your
 // Player.handleInput() method. You don't need to modify this.
